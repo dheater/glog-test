@@ -1,9 +1,10 @@
 #include <iostream>
 #include <glog/logging.h>
 
-int main()
+int main(int argc, char* argv[])
 {
-    google::InitGoogleLogging("foo");
-    std::cout << "Hello, World!" << std::endl;
+    FLAGS_log_dir = "./"; // Write to the current directory
+    google::InitGoogleLogging(argv[0]);
+    LOG(INFO) << "Hello, World!" << std::endl;
     return 0;
 }
