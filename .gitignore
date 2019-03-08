@@ -1,0 +1,7 @@
+.*~
+.*o
+tags
+tags.lock
+.idea
+build
+cmake-build-debug

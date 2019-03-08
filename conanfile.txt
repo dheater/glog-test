@@ -1,0 +1,7 @@
+[requires]
+glog/0.3.5@bincrafters/stable
+
+[options]
+
+[generators]
+cmake
